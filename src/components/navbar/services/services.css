@@ -92,6 +92,7 @@
     background-image: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5)
 
 }
-.logo{
+.logo1{
     color: #ffffff;
+    display: flex;
 }

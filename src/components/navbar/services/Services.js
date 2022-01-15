@@ -1,5 +1,7 @@
 import React from 'react'
 import "./services.css"
+import SvgIcon from '@mui/material/SvgIcon';
+import WebIcon from '@mui/icons-material/Web';
 
 export default function Services() {
     return (
@@ -19,7 +21,7 @@ export default function Services() {
                     <div className="service">
                         <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                            <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -35,7 +37,8 @@ export default function Services() {
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -51,7 +54,7 @@ export default function Services() {
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -67,7 +70,7 @@ export default function Services() {
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -83,7 +86,7 @@ export default function Services() {
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -99,7 +102,7 @@ export default function Services() {
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                            <div className="logo1"></div> 
+                             <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
