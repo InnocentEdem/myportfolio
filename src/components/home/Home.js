@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import edem from "../../../assets/edempotrait2.png"
+import edem from "../../assets/edempotrait2.png"
 
 
 export default function Home() {

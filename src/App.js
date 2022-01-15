@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Home from './components/navbar/home/Home';
+import Home from './components/home/Home';
 import Biography from './biography/Biography';
-import Services from './components/navbar/services/Services';
+import Services from './components/services/Services';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <Biography/>
       <Services/>
+      <Projects/>
       <div className="radial1"></div>
       <div className="radial2"></div>
       

@@ -1,0 +1,100 @@
+.projects-container{
+    margin: 0rem 10% ;
+    border-top: solid 1px rgba(255, 255, 255, 0.309);
+}
+#projects-header{
+    margin-top: 4rem;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3vh;
+}
+.project{
+    border: solid 1px  rgba(255, 255, 255, 0.138);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.project img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.project-image{
+    /* height: 72%; */
+    position: relative;
+}
+.project-text{
+    /* height: 28%; */
+
+}
+.project-text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.project-color-header{
+    padding: 0.5rem 0.5rem;
+    width: 70%;
+     font-size: 1rem;
+     letter-spacing: 0.05rem;
+    background: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.view-project{
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-content: center;
+}
+.view-project span{
+    margin-left: 1rem;
+    display: inline-block;
+}
+.enter-project{
+    position: absolute;
+    display: flex;
+
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    /* background-color: rgba(0, 0, 0, 0.604); */
+}
+.view-project-on-image{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    background-color: #8f00b3;
+    color: #c4c4c4;
+    margin: auto;
+    border-radius: 50%;
+}
+.view-project-on-image p{
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 1px#000000;
+}
+.modal{
+    background-color: rgba(255, 255, 255, 0.508);
+
+}
+.noDisplay {
+    display: none;
+    transition: display 2s;
+}
+.display{
+    display: block;
+}
