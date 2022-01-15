@@ -1,0 +1,50 @@
+.App {
+  width: 100%;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+}
+.body{
+  position: relative;
+  font-size: 62.5%;
+
+}
+.radial1{
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  background-image: radial-gradient(#f7063a3d 0% ,#00000000 100%
+  );
+  position: fixed;
+  background-blend-mode: lighten;
+  top: 0%;
+  right: 0%;
+  z-index: -10;
+
+}
+.radial2{
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  background-image: radial-gradient(#ff01f729 0% ,#00000000 100%
+  );
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  z-index: -200;
+
+
+}
+

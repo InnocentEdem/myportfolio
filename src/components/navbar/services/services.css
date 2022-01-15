@@ -1,0 +1,97 @@
+.body{
+
+}
+.services-container{
+    border-top: solid 1px rgba(255, 255, 255, 0.309);
+    margin: 0 10% 0 10%;
+}
+.services-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.services-header-button{
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border: solid 1px rgba(255, 255, 255, 0.522);
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.services-header{
+}
+.services-header-text{
+    font-size: 1.6rem;
+}
+.services-header p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3 rem;
+    width: 50rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.services-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vh;
+}
+.service{
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.309);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+}
+.service-text-content{
+    width: 75%;
+    margin-top: 0rem;
+
+}
+.service-logo{
+    width: 25%;
+    margin-top: 1rem;
+}
+.service-text-content-header{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+}
+.service-texts-content-text{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6rem;
+    padding: 0.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.service-logo-container{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5)
+
+}
+.logo{
+    color: #ffffff;
+}

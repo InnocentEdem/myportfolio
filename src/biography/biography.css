@@ -1,0 +1,154 @@
+
+body{
+    color: white;
+    margin-top: 15rem;
+}
+.bio{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin-top: 10rem;
+    margin: 0% 15%;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 10rem;
+ 
+
+}
+.bio-text{
+    margin-top: 2rem;
+}
+
+.biography-image, .biography-text-container{
+    width: 50%;
+    height: 2rem;
+}
+
+.biography-image{
+    min-width: 30%;
+    height: auto;
+    position: sticky;
+    top: 5%;
+
+}
+.biography-text-container{
+    font-size: 1rem;
+
+}
+.bio-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+.edem-bio{
+    display: block; 
+    max-width: 100%;
+    width: 70%;
+    border-radius: 50%;
+
+}
+.social{
+    width:71%;
+    height:100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.social div{
+    
+    display: absolute;
+    margin-top: 80%;
+    height:10%;
+    padding: 0% 0.5rem;
+
+    
+}
+.social div{
+    
+    /* padding: 0.5rem; */
+}
+#icon2{
+    margin-top: 85.5%;
+
+}
+.biography-text-container{
+    height: auto;
+}
+.scrollable-container{
+    /* overflow-y: scroll;
+    height: 29rem;
+    font-size: 2.5rem;
+    border: solid green; */
+}
+.bio::-webkit-scrollbar {
+    display: none;
+}
+.bio {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  .bio-intro, .bio-education{
+      margin-bottom: 5rem;
+  }
+  .education{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .ed1{
+      /* grid-template-areas: 1/2/1/2; */
+  }
+  .ed2{
+    /* grid-template-areas: 1/2/2/2; */
+  }
+.bio-competencies, .bio-tools{
+    display: flex;
+    margin-top: 0%;
+}
+  
+  .bio-title{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    position: relative;
+
+}
+.underline{
+    position: absolute;
+    left: 0%;
+    top: 1.5rem;
+    width: 3rem;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5)
+}
+.underline1{
+    position: absolute;
+    left: 0%;
+    bottom: -1.5rem;
+    width: 3rem;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5)
+
+}
+.biocompetency-items {
+    margin-top: 2rem; 
+}
+.biocompetency-items p{
+    margin: 0.2rem auto 0 0; 
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+   }
+   .bio-competencyp{
+       margin-top: 3rem;
+   }

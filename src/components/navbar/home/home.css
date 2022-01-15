@@ -1,0 +1,91 @@
+body{
+    margin: 0 10%;
+    color: white;
+    width: 100%;
+
+}
+.home-container{
+    display: flex;
+    margin: 0 15%;
+    margin-bottom: 5rem;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.296) ;
+    padding-bottom: 5rem;
+}
+.home-text,.home-image{
+    width: 50%;
+}
+.home-text{
+    margin-top: 15rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-bottom: -2rem;
+}
+.content-header{
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-bottom: 0;
+
+}
+.intro-text{
+    white-space: nowrap;
+}
+.trade{
+    display: inline-block;
+    background: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.content{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem; 
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.8rem;
+}
+.numbers{
+    display: flex;
+    width: 15rem;
+
+}
+.experience{
+    border-right: solid 1px rgba(255, 255, 255, 0.33);
+    padding-right: 2rem;
+
+}
+.projects{
+    padding-left: 2rem;
+}
+.number{
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+.projects p, .experience p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem; 
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.8rem;
+}
+.edempng{
+    display: block;
+    max-width: 100%;
+    width: 60%;
+    margin: auto;
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 14rem;
+}
+
