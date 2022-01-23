@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import Biography from './biography/Biography';
 import Services from './components/services/Services';
 import Projects from './components/projects/Projects';
+import CoreValues from './components/coreValues/CoreValues';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Biography/>
       <Services/>
       <Projects/>
+      <CoreValues/>
       <div className="radial1"></div>
       <div className="radial2"></div>
       
