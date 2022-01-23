@@ -1,0 +1,148 @@
+
+.contact-me-container{
+    margin: 0 10%;
+    border-top: solid 1px rgba(255, 255, 255, 0.309);
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+}
+.contact-form-container{
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3rem;
+
+}
+#contact-form{
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 3rem;
+    flex-direction: column;
+}
+.name-email{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+#contact-name, #contact-email{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+}
+#contact-name{
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 1.2rem;
+
+
+}
+#contact-email{
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 1.2rem;
+
+
+}
+.subject, #subject{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+
+    
+}
+#subject{
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+
+}
+
+.your-message,#contact-text{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+
+}
+#contact-text{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.submit{
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    font-family: "open sans";
+    border: none;
+    cursor: pointer;
+}
+.location{
+    margin: 6rem 10% 3rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.location-icon{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.map, .phone, .mail{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.location-header{
+    margin: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.location-main-text{
+    max-width: 70%;
+    margin: auto;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.707);
+    text-align: center;
+}
+footer{
+    margin-top: 6rem;
+    border-top:  1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10% ;
+   
+}
+.copyright{
+    font-size: 1.2rem;
+    display: flex;
+    padding:0 0.5rem ;
+    color: rgba(255, 255, 255, 0.7);
+}
+.copyright>span{
+    display: inline-block;
+    margin-right: 0.5rem;
+}

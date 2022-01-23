@@ -6,6 +6,7 @@ import Biography from './biography/Biography';
 import Services from './components/services/Services';
 import Projects from './components/projects/Projects';
 import CoreValues from './components/coreValues/CoreValues';
+import ContactMe from './components/contact-me/ContactMe';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services/>
       <Projects/>
       <CoreValues/>
+      <ContactMe id = "contact"/>
       <div className="radial1"></div>
       <div className="radial2"></div>
       

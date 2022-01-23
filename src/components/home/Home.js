@@ -1,9 +1,11 @@
 import React from 'react'
 import "./home.css"
 import edem from "../../assets/edempotrait2.png"
+import isInViewport from '../utilities/utilities'
 
 
 export default function Home() {
+
     return (
         <div>
             <div className="home-container">
