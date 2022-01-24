@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useRef}from 'react'
 import { useState, useEffect } from 'react'
 import "./projects.css"
 import projectsImg1 from "./assets/projects1.png"
@@ -13,11 +13,36 @@ import cx from "classnames"
 
 
 
-export default function Projects() {
-
+export default function Projects({show,options, getVisibleSection}) {
+    const showRef = useRef(null)
     const [modal1Off, setModal1Off] = useState(true)
     const [modal2Off, setModal2Off] = useState(true)
     const [modal3Off, setModal3Off] = useState(true)
+    const [isVisible,setIsVisible]= useState(false)
+    if(show==="portfolio"){
+        console.log("showing portfolio");
+        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
+    }
+    if(isVisible===true){
+        getVisibleSection("portfolio")
+    }
+
+    const callBack = (entries)=>{
+
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting)
+    }
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(callBack,options)
+        const thisRef=showRef.current
+        if(showRef.current)observer.observe(showRef.current)
+        return () => {
+            if(thisRef) observer.unobserve(thisRef)
+        }
+    }, [showRef,options])
+
+
     
     const handleMouseEnter=(id)=>{
         id=="1" ? setModal1Off(false):id=="2"?setModal2Off(false):setModal3Off(false)
@@ -28,7 +53,7 @@ export default function Projects() {
     }
 
     return (
-        <div>
+        <div ref={showRef}>
             <div className="projects-container">
                 <div className="services-header" id='projects-header'>
                     <div className="services-header-button">Projects</div>
