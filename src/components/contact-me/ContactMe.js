@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef,useState,useEffect} from 'react'
 import "./contactMe.css"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -9,10 +9,41 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import CopyrightOutlinedIcon from '@mui/icons-material/CopyrightOutlined';
 import { SvgIcon } from '@mui/material';
 
-export default function ContactMe() {
+export default function ContactMe({show,getVisibleSection}) {
+
+    const showRef = useRef(null)
+    const [ isVisible, setIsVisible ] = useState(false)
+    if(show==="contact"){
+        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "center"})
+    }
+    if(isVisible===true){
+        console.log("contact");
+        getVisibleSection("contact")
+    }
+    const options = {
+        root:null,
+        rootMargin:"0px",
+        threshold: 0.3
+      }
+
+    const callBack = (entries)=>{
+
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting)
+    }
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(callBack,options)
+        const thisRef = showRef.current
+        if(showRef.current)observer.observe(showRef.current)
+        return () => {
+            if(thisRef) observer.unobserve(thisRef)
+        }
+    }, [showRef,options])
+
     return (
-        <div>
-            <div className="contact-me-container">
+        <div ref={showRef}>
+            <div  className="contact-me-container">
                 <div className="services-header" id='projects-header'>
                     <div className="services-header-button">Contact</div>
                         <h2 className="services-header-text">

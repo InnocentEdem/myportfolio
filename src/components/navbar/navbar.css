@@ -47,3 +47,6 @@ body{
     border-width: 2px;
     border-image-source: linear-gradient(to right, #ff0004, #ea00ff, #3a44d5)
 }
+.menu > div{
+    cursor: pointer;
+}
