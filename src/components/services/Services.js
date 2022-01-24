@@ -1,12 +1,39 @@
-import React from 'react'
+import React,{useRef,useState, useEffect} from 'react'
 import "./services.css"
 import SvgIcon from '@mui/material/SvgIcon';
 import WebIcon from '@mui/icons-material/Web';
 
-export default function Services() {
+export default function Services({show,options, getVisibleSection}) {
+
+    const[isVisible,setIsVisible]=useState(false)
+    const showRef = useRef(null)
+    if(show==="services"){
+        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+    }
+    
+    if(isVisible===true){
+        getVisibleSection("services")
+    }
+
+    const callBack = (entries)=>{
+
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting)
+    }
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(callBack,options)
+        const thisRef=showRef.current
+        if(showRef.current)observer.observe(showRef.current)
+        return () => {
+            if(thisRef) observer.unobserve(thisRef)
+        }
+    }, [showRef,options])
+
+
     return (
-        <div>
-            <div className="services-container">
+        <div ref= {showRef}>
+            <div  className="services-container">
                 <div className="services-header">
                     <div className="services-header-button">Services</div>
                     <h2 className="services-header-text">

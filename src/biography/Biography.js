@@ -1,12 +1,38 @@
-import React from 'react'
+import React,{useRef, useState,useEffect} from 'react'
 import './biography.css'
 import edem from "../assets/edem3.png"
 import { BsLinkedin,BsGithub,BsFacebook } from "react-icons/bs";
 
 
-export default function Biography() {
+export default function Biography({show, options, getVisibleSection}) {
+    const showRef = useRef(null)
+    const[isVisible,setIsVisible]=useState(false)
+    if(show==="about"){
+        console.log("showing bio");
+        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
+    }
+    if(isVisible===true){
+        getVisibleSection("about")
+    }
+
+    const callBack = (entries)=>{
+
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting)
+    }
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver(callBack,options)
+        const thisRef = showRef.current
+        if(showRef.current)observer.observe(showRef.current)
+        return () => {
+            if(thisRef) observer.unobserve(thisRef)
+        }
+    }, [showRef,options])
+
+
     return (
-            <div className='bio'>
+            <div ref={showRef} className='bio'>
                 <div className="biography-image">
                     <div className="bio-img">
                         <img className='edem-bio' src={edem} alt="" />
