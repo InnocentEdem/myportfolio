@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { useRef,useState } from 'react';
+import { useCallback, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Biography from './biography/Biography';
@@ -21,25 +20,24 @@ function App() {
 
   const getSelectedTab=(e)=>{
     // let toScroll=e.target.id
-    setShow(e.target.id)
+    setShow(e?.target.id)
   }
-  const getVisibleSection=(section)=>{
-    console.log(section);
-    setVisibleSection(section)
-
-  }
+  const getVisibleSection= useCallback((section)=>{
+	const settingVisible = () =>{setVisibleSection(section)};
+	console.log(section, 'getvis');
+	setTimeout(settingVisible,100)
+  },[])
   return (
     <div className="App">
       <Navbar getSelectedTab={getSelectedTab} intersection = {visibleSection}/>
-      <Home show={show} options = {options}  getVisibleSection = { getVisibleSection}/>
-      <Biography show = {show} options = {options}  getVisibleSection = { getVisibleSection}/>
-      <Services show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
-      <Projects show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
+      <Home getSelectedTab={getSelectedTab} show={show} options = {options}  getVisibleSection = { getVisibleSection}/>
+      <Biography getSelectedTab={getSelectedTab} show = {show} options = {options}  getVisibleSection = { getVisibleSection}/>
+      <Services getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
+      <Projects getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
       <CoreValues />
-      <ContactMe show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
+      <ContactMe getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
       <div className="radial1"></div>
       <div className="radial2"></div>
-      
     </div>
   );
 }

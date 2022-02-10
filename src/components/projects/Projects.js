@@ -1,4 +1,4 @@
-import React ,{useRef}from 'react'
+import React ,{useRef,useCallback}from 'react'
 import { useState, useEffect } from 'react'
 import "./projects.css"
 import projectsImg1 from "./assets/projects1.png"
@@ -13,25 +13,25 @@ import cx from "classnames"
 
 
 
-export default function Projects({show,options, getVisibleSection}) {
+export default function Projects({show,options, getSelectedTab, getVisibleSection}) {
     const showRef = useRef(null)
     const [modal1Off, setModal1Off] = useState(true)
     const [modal2Off, setModal2Off] = useState(true)
     const [modal3Off, setModal3Off] = useState(true)
-    const [isVisible,setIsVisible]= useState(false)
-    if(show==="portfolio"){
-        console.log("showing portfolio");
-        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
-    }
-    if(isVisible===true){
-        getVisibleSection("portfolio")
-    }
 
-    const callBack = (entries)=>{
+    if(show==="portfolio"){
+        showRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "start"})
+		getSelectedTab();
+    }
+	const updateGetVisible = useCallback((state) =>{
+		state === true && getVisibleSection('portfolio')
+	},[getVisibleSection])
+
+    const callBack = useCallback((entries)=>{
 
         const [entry] = entries;
-        setIsVisible(entry.isIntersecting)
-    }
+        updateGetVisible(entry.isIntersecting)
+    },[updateGetVisible])
     
     useEffect(() => {
         const observer = new IntersectionObserver(callBack,options)
@@ -40,7 +40,7 @@ export default function Projects({show,options, getVisibleSection}) {
         return () => {
             if(thisRef) observer.unobserve(thisRef)
         }
-    }, [showRef,options])
+    }, [showRef, options, callBack])
 
 
     

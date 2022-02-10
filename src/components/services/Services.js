@@ -1,25 +1,25 @@
-import React,{useRef,useState, useEffect} from 'react'
+import React,{useRef,useState, useEffect,useCallback} from 'react'
 import "./services.css"
 import SvgIcon from '@mui/material/SvgIcon';
 import WebIcon from '@mui/icons-material/Web';
 
-export default function Services({show,options, getVisibleSection}) {
+export default function Services({show,options, getSelectedTab, getVisibleSection}) {
 
-    const[isVisible,setIsVisible]=useState(false)
     const showRef = useRef(null)
     if(show==="services"){
-        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+        showRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+		getSelectedTab()
     }
     
-    if(isVisible===true){
-        getVisibleSection("services")
-    }
+	const updateGetVisible = useCallback((state) =>{
+		state === true && getVisibleSection('services')
+	},[getVisibleSection])
 
-    const callBack = (entries)=>{
+    const callBack = useCallback((entries)=>{
 
         const [entry] = entries;
-        setIsVisible(entry.isIntersecting)
-    }
+        updateGetVisible(entry.isIntersecting)
+    },[updateGetVisible])
     
     useEffect(() => {
         const observer = new IntersectionObserver(callBack,options)
@@ -28,12 +28,12 @@ export default function Services({show,options, getVisibleSection}) {
         return () => {
             if(thisRef) observer.unobserve(thisRef)
         }
-    }, [showRef,options])
+    }, [showRef,options, callBack])
 
 
     return (
-        <div ref= {showRef}>
-            <div  className="services-container">
+        <div>
+            <div  ref= {showRef}  className="services-container">
                 <div className="services-header">
                     <div className="services-header-button">Services</div>
                     <h2 className="services-header-text">
