@@ -1,4 +1,4 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect,useMemo, useCallback} from 'react'
 import "./contactMe.css"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -9,28 +9,30 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import CopyrightOutlinedIcon from '@mui/icons-material/CopyrightOutlined';
 import { SvgIcon } from '@mui/material';
 
-export default function ContactMe({show,getVisibleSection}) {
+export default function ContactMe({show, getSelectedTab, getVisibleSection}) {
 
     const showRef = useRef(null)
-    const [ isVisible, setIsVisible ] = useState(false)
+	const root = null;
+	const rootMargin = "0px";
+	const threshold = 0.3;
     if(show==="contact"){
-        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "center"})
+        showRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "center"})
+		getSelectedTab()
     }
-    if(isVisible===true){
-        console.log("contact");
-        getVisibleSection("contact")
-    }
-    const options = {
-        root:null,
-        rootMargin:"0px",
-        threshold: 0.3
-      }
 
-    const callBack = (entries)=>{
+	const updateGetVisible = useCallback((state) =>{
+		state === true && getVisibleSection('contact')
+	},[getVisibleSection])
+	const returnOptions = () =>{
+		return {root, rootMargin, threshold}
+	}
+    const options = useMemo( returnOptions,[returnOptions])
+
+    const callBack = useCallback((entries)=>{
 
         const [entry] = entries;
-        setIsVisible(entry.isIntersecting)
-    }
+        updateGetVisible(entry.isIntersecting)
+    },[updateGetVisible])
     
     useEffect(() => {
         const observer = new IntersectionObserver(callBack,options)
@@ -39,7 +41,7 @@ export default function ContactMe({show,getVisibleSection}) {
         return () => {
             if(thisRef) observer.unobserve(thisRef)
         }
-    }, [showRef,options])
+    }, [showRef,options,callBack])
 
     return (
         <div ref={showRef}>

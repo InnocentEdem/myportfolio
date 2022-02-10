@@ -1,13 +1,12 @@
 
 body{
     font-size: 62.5%;
-    width: 100%;
 
 
 }
 .navbar{
     position: fixed;
-    bottom: 90%;
+    /* bottom: 90%; */
     top: 0%;
     width: 100%;
     border-bottom: solid 1px rgba(255, 255, 255, 0.172);
@@ -20,7 +19,7 @@ body{
 .menu-logo{
     color: #ffffff;
     display: flex;
-    margin: 0.5rem 5% 0.5rem 15%;
+    margin: 0.5rem 10% 0.5rem 10%;
 }
 .logo{
     width: 20%;

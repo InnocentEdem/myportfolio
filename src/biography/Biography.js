@@ -1,26 +1,25 @@
-import React,{useRef, useState,useEffect} from 'react'
+import React,{useRef, useState,useEffect,useCallback} from 'react'
 import './biography.css'
 import edem from "../assets/edem3.png"
 import { BsLinkedin,BsGithub,BsFacebook } from "react-icons/bs";
 
 
-export default function Biography({show, options, getVisibleSection}) {
+export default function Biography({show, options, getSelectedTab, getVisibleSection}) {
     const showRef = useRef(null)
-    const[isVisible,setIsVisible]=useState(false)
     if(show==="about"){
-        console.log("showing bio");
         showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "start"})
+		getSelectedTab()
     }
-    if(isVisible===true){
-        getVisibleSection("about")
-    }
+	const updateGetVisible = useCallback((state) =>{
+		state === true && getVisibleSection('about')
+	},[getVisibleSection])
 
-    const callBack = (entries)=>{
+    const callBack = useCallback((entries)=>{
 
         const [entry] = entries;
-        setIsVisible(entry.isIntersecting)
-    }
-    
+        updateGetVisible(entry.isIntersecting)
+    },[updateGetVisible])
+
     useEffect(() => {
         const observer = new IntersectionObserver(callBack,options)
         const thisRef = showRef.current
@@ -28,7 +27,7 @@ export default function Biography({show, options, getVisibleSection}) {
         return () => {
             if(thisRef) observer.unobserve(thisRef)
         }
-    }, [showRef,options])
+    }, [showRef,options, callBack])
 
 
     return (
@@ -46,26 +45,28 @@ export default function Biography({show, options, getVisibleSection}) {
                 </div>
                 <div className="biography-text-container">
                     <div className="bio-intro">
-                        <h2 className="bio-title">Biography <p className="underline"></p></h2>
+                        <h2 className="bio-title">About Me <p className="underline"></p></h2>
                        <p className="bio-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Maecenas aliquam amet quam quis et. Non amet vitae arcu fames posuere.
+					   I love to develop robust, interactive, user-friendly, and feature-rich
+						websites. I leverage analytical skills and strong attention to detail in order to deliver original and efficient solutions,
+						and build new websites. 
+
                        </p>
                     </div>
                     <div className="bio-education">
                     <h2 className="bio-title">Education<p className="underline"></p></h2>
                         <div className="education">
                             <div className="ed1">
-                                <h3>Lorem ipsum dolor </h3>
-                                <p className="edcontent">Maecenas aliquam amet </p>
+                                <h3>Regional Maritime University </h3>
+                                <p className="edcontent">BSc Electrical / Electronic Engineering </p>
                             </div>
                             <div className="ed2">
-                                <h3>Lorem ipsum dolor </h3>
-                                <p className="edcontent">Maecenas aliquam amet </p>
+                                <h3>APCS Automation Training </h3>
+                                <p className="edcontent">Industrial Automation Engineering </p>
                             </div>
                             <div className="ed3">
-                                <h3>Lorem ipsum dolor </h3>
-                                <p className="edcontent">Maecenas aliquam amet </p>
+                                <h3>AmaliTech Training Center </h3>
+                                <p className="edcontent">Full Stack Web Development </p>
                             </div>
                         </div>
                     </div>

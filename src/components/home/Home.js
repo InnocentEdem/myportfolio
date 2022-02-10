@@ -1,26 +1,25 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect, useCallback} from 'react'
 import "./home.css"
-import edem from "../../assets/edempotrait2.png"
-import isInViewport from '../utilities/utilities'
+import edem from "../../assets/edempotrait.png"
 
 
 
-export default function Home({show,options, getVisibleSection}) {
+export default function Home({show,options, getSelectedTab, getVisibleSection}) {
     const showRef = useRef(null)
-    const [isVisible, setIsVisible] = useState(false)
     if(show==="home"){
-        console.log("showing");
-        showRef.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
-    }
-    if(isVisible===true){
-        getVisibleSection("home")
+        showRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+		getSelectedTab()
     }
 
-    const callBack = (entries)=>{
+	const updateGetVisible = useCallback((state) =>{
+		state === true && getVisibleSection('home')
+	},[getVisibleSection])
+
+    const callBack = useCallback((entries)=>{
 
         const [entry] = entries;
-        setIsVisible(entry.isIntersecting)
-    }
+        updateGetVisible(entry.isIntersecting)
+    },[updateGetVisible])
     
     useEffect(() => {
         const observer = new IntersectionObserver(callBack,options)
@@ -29,7 +28,7 @@ export default function Home({show,options, getVisibleSection}) {
         return () => {
             if(thisRef) observer.unobserve(thisRef)
         }
-    }, [showRef,options])
+    }, [showRef,options, callBack])
 
     return (
         <div>

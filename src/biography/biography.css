@@ -19,6 +19,11 @@ body{
 }
 .bio-text{
     margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem; 
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.8rem;
 }
 
 .biography-image, .biography-text-container{
