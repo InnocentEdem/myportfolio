@@ -98,6 +98,9 @@ textarea:focus, input:focus{
     display: flex;
     justify-content: space-between;
 }
+.location > div{
+	width: 35%;
+}
 .location-icon{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -145,4 +148,7 @@ footer{
 .copyright>span{
     display: inline-block;
     margin-right: 0.5rem;
+}
+.location-main-text{
+	white-space: nowrap;
 }

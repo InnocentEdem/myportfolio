@@ -37,12 +37,11 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                 <div className="services-header">
                     <div className="services-header-button">Services</div>
                     <h2 className="services-header-text">
-                        Services provided for you
                     </h2>
-                    <p>
+                    {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    </p> */}
                 </div>
                 <div className="services-body">
                     <div className="service">
@@ -53,11 +52,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                Frontend
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Pixel Perfect, Responsive Website Development using advanced Javascript Frameworks.
                             </div>
                         </div>
                     </div>
@@ -70,11 +68,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                Api Integration
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             	GraphQL and Rest Api Integration services for your Microservice Applications
                             </div>
                         </div>
                     </div>
@@ -86,11 +83,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                WordPress
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Manage your websites with the Largest Content Management System.
                             </div>
                         </div>
                     </div>
@@ -102,11 +98,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                Mobile
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Fast iOS and Android Mobile application development using ReactNative. 
                             </div>
                         </div>
                     </div>
@@ -118,11 +113,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                Tutorials
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Web Design and Development Tutorial Services, in-person or remote.
                             </div>
                         </div>
                     </div>
@@ -134,11 +128,10 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                         <div className="service-text-content">
                             <h3 className="service-text-content-header">
-                                Service
+                                Blog
                             </h3>
                             <div className="service-texts-content-text">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Interactive content creation for Tech blogs.
                             </div>
                         </div>
                     </div>
