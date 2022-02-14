@@ -96,10 +96,18 @@ export default function Biography({show, options, getSelectedTab, getVisibleSect
                                     <h2 className="bio-title">Competencies<p className="underline1"></p></h2>
 
                                     <div className="bio-competencyp">
-                                        <p>JavaScript</p>
-                                        <p>JavaScript</p>
-                                        <p>JavaScript</p>
-                                        <p>JavaScript</p>
+										<p>JavaScript</p>
+										<p>TypeScript</p>
+                                        <p>ReactJs</p>
+                                        <p>NextJs</p>
+										<p>Redux</p>
+										<p>Relay</p>
+										<p>GraphQL</p>
+										<p>RxJs</p>
+										<p>D3.Js</p>
+										<p>HTML / CSS </p>
+										<p>Python</p>
+
 
                                     </div>
 
@@ -112,10 +120,13 @@ export default function Biography({show, options, getSelectedTab, getVisibleSect
                                 <h2 className="bio-title">Tools<p className="underline1"></p></h2>
 
                                     <div className="bio-competencyp">
+                                        <p>GitHub</p>
                                         <p>Jira</p>
-                                        <p>Jira</p>
-                                        <p>Jira</p>
-                                        <p>Jira</p>
+                                        <p>Trello</p>
+                                        <p>Jest</p>
+                                        <p>VsCode</p>
+                                        <p>IntelliJ</p>
+                                        <p>Slack</p>
                                     </div>
 
                                 </div>

@@ -60,17 +60,17 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                         <h2 className="services-header-text">
                             My latest projects
                         </h2>
-                        <p>
+                        {/* <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        </p> */}
                 </div>
                 <div className="projects-grid">
                         <div className="project">
                             <div id='1' className="project-image " onMouseLeave={(e)=>handleMouseLeave("1")} onMouseEnter={(e)=>handleMouseEnter("1")}>
                                 <div className = {cx([{"enter-project":true},{"modal":true},{"noDisplay":modal1Off}])}  >
                                         <div className="view-project-on-image">
-                                            <p>VIEW PROJECT</p>
+                                            <p>VIEW </p>
                                         </div>
                                 </div>                                  
                                 <img src={projectsImg2} alt="" />
@@ -80,13 +80,13 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                                     Service Type
                                 </div>
                                 <h3 className="service-text-content-header">
-                                    Project Title
+                                    Freelance Work App
                                 </h3>
                                 <div className="service-texts-content-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </div>
-                                <div className="view-project">VIEW PROJECT <span> <SvgIcon><ExitToAppIcon style={{fontSize:"1rem"}}/></SvgIcon> </span></div>
+                                <div className="view-project">VIEW <span> <SvgIcon><ExitToAppIcon style={{fontSize:"1rem"}}/></SvgIcon> </span></div>
 
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                                 <img src={projectsImg1} alt="" />
                                 <div className = {cx([{"enter-project":true},{"modal":true},{"noDisplay":modal2Off}])}  >
                                         <div className="view-project-on-image">
-                                            <p>VIEW PROJECT</p>
+                                            <p>VIEW</p>
                                         </div>
                                 </div>                            
                             </div>
@@ -104,7 +104,7 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                                     Service Type
                                 </div>
                                 <h3 className="service-text-content-header">
-                                    Project Title
+                                    Company Website
                                 </h3>
                                 <div className="service-texts-content-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -119,7 +119,7 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                                 <img src={projectsImg2} alt="" />
                                 <div className = {cx([{"enter-project":true},{"modal":true},{"noDisplay":modal3Off}])}  >
                                     <div className="view-project-on-image">
-                                        <p>VIEW PROJECT</p>
+                                        <p>VIEW </p>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@ export default function Projects({show,options, getSelectedTab, getVisibleSectio
                                     Service Type
                                 </div>
                                 <h3 className="service-text-content-header">
-                                    Project Title
+                                    Quiz Management App
                                 </h3>
                                 <div className="service-texts-content-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,

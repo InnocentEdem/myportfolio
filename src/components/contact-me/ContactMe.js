@@ -51,10 +51,10 @@ export default function ContactMe({show, getSelectedTab, getVisibleSection}) {
                         <h2 className="services-header-text">
                             Get in touch
                         </h2>
-                        <p>
+                        {/* <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        </p> */}
                 </div>
                 <div className="contact-form-container">
                         <form id = "contact-form"action="" method="post">
@@ -78,22 +78,22 @@ export default function ContactMe({show, getSelectedTab, getVisibleSection}) {
                         <div className="location-icon"><SvgIcon style={{fontSize:"2rem"}} ><LocationOnIcon/></SvgIcon></div>
                         <div className="location-text">
                             <div className="location-header">Location</div>
-                            <div className="location-main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                            <div className="location-main-text">Accra, Ghana</div>
                         </div>
                     </div>
                     <div className="phone">
                         <div className="location-icon"><SvgIcon style={{fontSize:"2rem"}} ><LocalPhoneIcon/></SvgIcon></div>
                         <div className="location-text">
                             <div className="location-header">Phone</div>
-                            <div className="location-main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+                            <div className="location-main-text"> +233242271553</div>
                         </div>
                     </div>
 
                     <div className="mail">
                     <div className="location-icon"><SvgIcon style={{fontSize:"2rem"}}>< MailIcon/></SvgIcon></div>
                         <div className="location-text">
-                            <div className="location-header">Mail</div>
-                            <div className="location-main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit </div>
+                            <div className="location-header">Email</div>
+                            <div className="location-main-text">edem.kuwornu@protonmail.com </div>
                         </div>
                     </div>
                 </div>      
@@ -105,6 +105,7 @@ export default function ContactMe({show, getSelectedTab, getVisibleSection}) {
                         <span><SvgIcon><GitHubIcon/></SvgIcon></span>
                         <span><SvgIcon><FacebookOutlinedIcon/></SvgIcon></span>
                     </div>
+					<div>Made with ReactJs</div>
                     <div className="copyright">
                     <span><SvgIcon><CopyrightOutlinedIcon/></SvgIcon> </span>  2022 copyright all right reserved
                     </div>                
