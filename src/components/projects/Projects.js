@@ -8,9 +8,9 @@ import cx from "classnames";
 import Zoom from '@mui/material/Zoom';
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
 
-import projectsImg1 from "./assets/projects111.png"
-import projectsImg2 from "./assets/projects222.png"
-import projectsImg3 from "./assets/projects333.png"
+import projectsImg1 from "./assets/projects11.png"
+import projectsImg2 from "./assets/projects22.png"
+import projectsImg3 from "./assets/projects33.png"
 import fairwork from "../../assets/fairwork.png"
 import amalifair from "../../assets/amalifair.png"
 import amalitechdotcom from "../../assets/amalitechdotcom.png"
