@@ -26,6 +26,9 @@ export default function ContactMe({ show, getSelectedTab, getVisibleSection }) {
 	const returnOptions = () => {
 		return { root, rootMargin, threshold }
 	}
+	const handleSubmit = (e) =>{
+		e.target.preventDefault()
+	}
 	const options = useMemo(returnOptions, [returnOptions])
 
 	const callBack = useCallback((entries) => {
@@ -57,7 +60,7 @@ export default function ContactMe({ show, getSelectedTab, getVisibleSection }) {
                         </p> */}
 				</div>
 				<div className="contact-form-container">
-					<form id="contact-form" action="" method="post" data-netlify="true">
+					<form id="contact-form" data-netlify="true" onSubmit={handleSubmit}>
 						<div className="name-email">
 							<input type="text" id="contact-name" placeholder='Name *' required/>
 							<input type="text" id="contact-email" placeholder='Email *' required />
