@@ -48,3 +48,32 @@ html body {
 
 }
 
+@media only screen and (max-width:900px){
+
+  .radial1{
+    height: 45vh;
+    width: 45vh;
+    border-radius: 50%;
+    background-image: radial-gradient(#f7063a3d 0% ,#00000000 100%
+    );
+    position: fixed;
+    background-blend-mode: lighten;
+    top: 0%;
+    right: 0%;
+    z-index: -10;
+  
+  }
+  .radial2{
+    height: 45vh;
+    width: 45vh;
+    border-radius: 50%;
+    background-image: radial-gradient(#ff01f729 0% ,#00000000 100%
+    );
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    z-index: -200;
+  
+  
+  }
+}
