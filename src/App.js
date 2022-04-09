@@ -33,7 +33,7 @@ function App() {
       <Biography getSelectedTab={getSelectedTab} show = {show} options = {options}  getVisibleSection = { getVisibleSection}/>
       <Services getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
       <Projects getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
-      <CoreValues />
+      {/* <CoreValues /> */}
       <ContactMe getSelectedTab={getSelectedTab} show = {show} options = {options} getVisibleSection = { getVisibleSection}/>
       <div className="radial1"></div>
       <div className="radial2"></div>

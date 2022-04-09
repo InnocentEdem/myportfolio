@@ -5,9 +5,9 @@ import { SvgIcon } from '@mui/material'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import cx from "classnames";
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
-import projectsImg1 from "./assets/projects11.png"
-import projectsImg2 from "./assets/projects22.png"
-import projectsImg3 from "./assets/projects33.png"
+import projectsImg1 from "./assets/8644346_calendar_schedule_date_icon.png"
+import projectsImg2 from "./assets/8644348_computer_technology_pc_icon.png"
+import projectsImg3 from "./assets/8644349_diagram_graph_chart_icon.png"
 import fairwork from "../../assets/fairwork.png"
 import amalifair from "../../assets/amalifair.png"
 import amalitechdotcom from "../../assets/amalitechdotcom.png"
@@ -120,8 +120,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Vitual Event Mgt
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								A virtual Event Organisation platform to facilate virtual event organization.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(1); }}>VIEW PROJECT<span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 
@@ -144,8 +143,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Freelance Work
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Connecting Remote workers with potential clients.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(2); }}>VIEW PROJECT <span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 
@@ -168,8 +166,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Company Website
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Optimized Web Presence for a Services Company.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(3)}}>VIEW PROJECT <span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 

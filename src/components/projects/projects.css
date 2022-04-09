@@ -102,7 +102,7 @@
 	white-space: nowrap;
 }
 .modal{
-    background-color: rgba(255, 255, 255, 0.59);
+    /* background-color: rgba(255, 255, 255, 0.59); */
     cursor: pointer;
 
 }
@@ -145,7 +145,7 @@
     display: block;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:900px){
     .projects-grid{
         max-width: 1550px;
         margin: auto;
@@ -159,5 +159,8 @@
         border: solid white;
         display: none;
     } */
+    .project-image{
+        display: none;
+    }
 
 }

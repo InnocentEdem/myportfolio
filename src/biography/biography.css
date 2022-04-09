@@ -96,7 +96,7 @@ body{
   .education{
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
   }
   .ed1{
       /* grid-template-areas: 1/2/1/2; */
