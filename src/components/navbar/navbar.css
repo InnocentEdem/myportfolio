@@ -4,6 +4,9 @@ body{
 
 
 }
+.hamburger{
+    display:none;
+}
 .navbar{
     position: fixed;
     /* bottom: 90%; */
@@ -22,12 +25,17 @@ body{
     margin: 0.5rem 10% 0.5rem 10%;
 }
 .logo{
+    display: flex;
     width: 20%;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.05rem;
     margin: 1rem;
     margin-left:0 ;
+    /* border: solid red; */
+}
+.avatar{
+    display: none;
 }
 .menu{
     display: flex;
@@ -48,4 +56,27 @@ body{
 }
 .menu > div{
     cursor: pointer;
+}
+
+@media only screen and (max-width:900px){
+    .hamburger{
+        display:block;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        display: none;
+    }
+    .avatar{
+        display: block;
+    }
+    .logo1{
+        width: 30%;
+    }
+
 }
