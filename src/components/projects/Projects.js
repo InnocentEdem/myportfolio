@@ -120,8 +120,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Vitual Event Mgt
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								A virtual Event Organisation platform to facilate virtual event organization.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(1); }}>VIEW PROJECT<span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 
@@ -144,8 +143,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Freelance Work
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Connecting Remote workers with potential clients.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(2); }}>VIEW PROJECT <span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 
@@ -168,8 +166,7 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 								Company Website
 							</h3>
 							<div className="service-texts-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Optimized Web Presence for a Services Company.
 							</div>
 							<div className="view-project" onClick={() => { handleAppearance(3)}}>VIEW PROJECT <span> <SvgIcon><ExitToAppIcon style={{ fontSize: "1rem" }} /></SvgIcon> </span></div>
 
