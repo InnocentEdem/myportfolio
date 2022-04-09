@@ -30,7 +30,6 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 		getSelectedTab();
 	}
 	const handleAppearance = (key) => {
-		console.log(key)
 
 		if (key === 1) {
 			setShowImage1(false)

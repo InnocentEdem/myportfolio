@@ -20,12 +20,10 @@ function App() {
 
   const getSelectedTab=(e)=>{
     // let toScroll=e.target.id
-    console.log(e);
     setShow(e)
   }
   const getVisibleSection= useCallback((section)=>{
 	const settingVisible = () =>{setVisibleSection(section)};
-	console.log(section, 'getvis');
 	setTimeout(settingVisible,100)
   },[])
   return (

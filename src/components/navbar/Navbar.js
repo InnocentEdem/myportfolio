@@ -28,20 +28,16 @@ export default function Navbar({ getSelectedTab,intersection="home"}) {
       setAnchorEl(event.currentTarget);
     };
     const handleClose = (e) => {
-        // console.log(e.target.innerText);
        
     setTimeout(()=>{
               setAnchorEl(null);
 
     },700)
       getSelectedTab(e.target.innerText)
-    //   console.log(open,anchorEl);
     };
     const handleChange = (e)=>{
-        console.log(e)
     }
     const handleClick = (e)=>{
-        console.log(e.target.id);
         getSelectedTab(e.target.id)
     }
 
