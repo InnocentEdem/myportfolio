@@ -5,9 +5,9 @@ import { SvgIcon } from '@mui/material'
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import cx from "classnames";
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
-import projectsImg1 from "./assets/projects11.png"
-import projectsImg2 from "./assets/projects22.png"
-import projectsImg3 from "./assets/projects33.png"
+import projectsImg1 from "./assets/8644346_calendar_schedule_date_icon.png"
+import projectsImg2 from "./assets/8644348_computer_technology_pc_icon.png"
+import projectsImg3 from "./assets/8644349_diagram_graph_chart_icon.png"
 import fairwork from "../../assets/fairwork.png"
 import amalifair from "../../assets/amalifair.png"
 import amalitechdotcom from "../../assets/amalitechdotcom.png"

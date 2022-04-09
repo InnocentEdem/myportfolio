@@ -69,7 +69,7 @@ export default function ContactMe({ show, getSelectedTab, getVisibleSection }) {
 							<input type="text" id="subject" placeholder='Subject ' />
 						</div>
 						<div className="your-message">
-							<textarea name="" id="contact-text" cols="30" rows="10" placeholder='Your message *'></textarea>
+							<textarea name="" id="contact-text" cols="30" rows="5" placeholder='Your message *'></textarea>
 						</div>
 						<div className="send-button">
 							<button className="submit" type='submit' >Send Message <span className="icon"></span></button>

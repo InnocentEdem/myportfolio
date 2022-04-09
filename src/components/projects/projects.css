@@ -145,7 +145,7 @@
     display: block;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:900px){
     .projects-grid{
         max-width: 1550px;
         margin: auto;
@@ -159,5 +159,8 @@
         border: solid white;
         display: none;
     } */
+    .project-image{
+        display: none;
+    }
 
 }

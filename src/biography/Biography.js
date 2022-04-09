@@ -61,8 +61,8 @@ export default function Biography({show, options, getSelectedTab, getVisibleSect
                                 <p className="edcontent">BSc Electrical / Electronic Engineering </p>
                             </div>
                             <div className="ed2">
-                                <h3>APCS Automation Training </h3>
-                                <p className="edcontent">Industrial Automation Engineering </p>
+                                <h3>APCS Automation </h3>
+                                <p className="edcontent">Automation Engineering </p>
                             </div>
                             <div className="ed3">
                                 <h3>AmaliTech Training Center </h3>
@@ -74,17 +74,17 @@ export default function Biography({show, options, getSelectedTab, getVisibleSect
                     <h2 className="bio-title">Experience<p className="underline"></p></h2>
                         <div className="education">
                             <div className="ed1">
-                                <h3>Lorem ipsum dolor </h3>
-                                <p className="edcontent">Maecenas aliquam amet </p>
+                                <h3>Full Stack Developer </h3>
+                                <p className="edcontent">AmaliTech Services </p>
                             </div>
                             <div className="ed2">
-                                <h3>Lorem ipsum dolor </h3>
-                                <p className="edcontent">Maecenas aliquam amet </p>
+                                <h3>Web Consultant </h3>
+                                <p className="edcontent">CB Technologies </p>
                             </div>
-                            <div className="ed3">
-                                <h3>Lorem ipsum dolor </h3>
+                            {/* <div className="ed3">
+                                <h3>  </h3>
                                 <p className="edcontent">Maecenas aliquam amet </p>
-                            </div>
+                            </div> */}
                         </div>
                             
                     </div>
