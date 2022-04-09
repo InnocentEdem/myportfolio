@@ -2,12 +2,9 @@ import React, { useRef, useCallback } from 'react'
 import { useState, useEffect } from 'react'
 import "./projects.css"
 import { SvgIcon } from '@mui/material'
-import TransitEnterexitIcon from '@mui/icons-material/TransitEnterexit';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import cx from "classnames";
-import Zoom from '@mui/material/Zoom';
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
-
 import projectsImg1 from "./assets/projects11.png"
 import projectsImg2 from "./assets/projects22.png"
 import projectsImg3 from "./assets/projects33.png"
@@ -33,7 +30,6 @@ export default function Projects({ show, options, getSelectedTab, getVisibleSect
 		getSelectedTab();
 	}
 	const handleAppearance = (key) => {
-		console.log(key)
 
 		if (key === 1) {
 			setShowImage1(false)

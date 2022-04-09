@@ -108,7 +108,7 @@ export default function ContactMe({ show, getSelectedTab, getVisibleSection }) {
 						<span><SvgIcon><GitHubIcon /></SvgIcon></span>
 						<span><SvgIcon><FacebookOutlinedIcon /></SvgIcon></span>
 					</div>
-					<div>Created with ReactJs</div>
+					<div className='created'>Created with ReactJs</div>
 					<div className="copyright">
 						<span><SvgIcon><CopyrightOutlinedIcon /></SvgIcon> </span>  2022 copyright all rights reserved
 					</div>

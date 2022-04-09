@@ -74,10 +74,7 @@ body{
 
     
 }
-.social div{
-    
-    /* padding: 0.5rem; */
-}
+
 #icon2{
     margin-top: 85.5%;
 
@@ -85,12 +82,7 @@ body{
 .biography-text-container{
     height: auto;
 }
-.scrollable-container{
-    /* overflow-y: scroll;
-    height: 29rem;
-    font-size: 2.5rem;
-    border: solid green; */
-}
+
 .bio::-webkit-scrollbar {
     display: none;
 }
@@ -158,3 +150,49 @@ body{
    .bio-competencyp{
        margin-top: 3rem;
    }
+@media only screen and (max-width:900px){
+    .bio{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        /* padding-top: 5rem; */
+        /* margin: 0% 10%; */
+        /* height: 100vh; */
+        overflow-y: scroll;
+        margin-bottom: 3rem;
+        height: auto;
+
+    }
+
+    .bio{
+        flex-direction: column;
+    }
+
+    .biography-image, .biography-text-container{
+        width:100%;
+        /* height: 2rem; */
+    }
+    .biography-text-container{
+        position: relative;
+    }
+    
+    .biography-image{
+        /* min-width: 30%; */
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        position: static;
+        text-align: center;
+        height: auto;
+        margin-bottom: 3rem;
+        /* top: 5%; */
+        /* margin-top: -10%; */
+    }
+    .bio-img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+ 
+    }
+}

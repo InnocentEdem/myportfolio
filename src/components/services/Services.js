@@ -60,6 +60,21 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                         </div>
                     </div>
                     <div className="service">
+                        <div className="service-logo">
+                            <div className="service-logo-container">
+                             <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                            </div>
+                        </div>
+                        <div className="service-text-content">
+                            <h3 className="service-text-content-header">
+                                Backend
+                            </h3>
+                            <div className="service-texts-content-text">
+                             Node and Express, Django, Django Rest Framework, PostgreSQL.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
                                 <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
@@ -120,21 +135,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                             </div>
                         </div>
                     </div>
-                    <div className="service">
-                    <div className="service-logo">
-                            <div className="service-logo-container">
-                             <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
-                            </div>
-                        </div>
-                        <div className="service-text-content">
-                            <h3 className="service-text-content-header">
-                                Blog
-                            </h3>
-                            <div className="service-texts-content-text">
-                             Interactive content creation for Tech blogs.
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
