@@ -2,6 +2,11 @@ import React,{useRef,useState, useEffect,useCallback} from 'react'
 import "./services.css"
 import SvgIcon from '@mui/material/SvgIcon';
 import WebIcon from '@mui/icons-material/Web';
+import StorageIcon from '@mui/icons-material/Storage';
+import WebhookIcon from '@mui/icons-material/Webhook';
+import CopyAllIcon from '@mui/icons-material/CopyAll';
+import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function Services({show,options, getSelectedTab, getVisibleSection}) {
 
@@ -62,7 +67,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                     <div className="service">
                         <div className="service-logo">
                             <div className="service-logo-container">
-                             <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                             <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><StorageIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -77,7 +82,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}>< WebhookIcon /></SvgIcon></div> 
 
                             </div>
                         </div>
@@ -93,7 +98,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><CopyAllIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -108,7 +113,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><MobileFriendlyIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
@@ -123,7 +128,7 @@ export default function Services({show,options, getSelectedTab, getVisibleSectio
                     <div className="service">
                     <div className="service-logo">
                             <div className="service-logo-container">
-                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><WebIcon /></SvgIcon></div> 
+                                <div className="logo1"><SvgIcon style={{fontSize:'2.5rem', margin:"auto"}}><SchoolIcon /></SvgIcon></div> 
                             </div>
                         </div>
                         <div className="service-text-content">
