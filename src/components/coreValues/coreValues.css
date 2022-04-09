@@ -1,0 +1,48 @@
+
+.core-values-container{
+    margin: 6rem 10%;
+    border-top: solid 1px rgba(255, 255, 255, 0.309);
+}
+.values-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vh;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgba(255, 255, 255, 0.309);
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.309);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+
+}
+#core-value{
+    border: none;
+}
+.core-value-icon{
+    
+
+}
+.icon-circle{
+    border: solid 1px rgba(255, 255, 255, 0.08);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    
+
+}
+@media only screen and (max-width:1200px){
+    .core-values-container{
+        display: none;
+    }
+}
